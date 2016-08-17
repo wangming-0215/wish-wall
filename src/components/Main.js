@@ -1,22 +1,27 @@
 require('normalize.css/normalize.css');
 require('styles/App.css');
 
-import React from 'react';
 
-let yeomanImage = require('../images/yeoman.png');
+import React,{Component} from 'react';
+import ImagesBlock from './ImagesBlock.js';
 
-class AppComponent extends React.Component {
-  render() {
-    return (
-      <div className="index">
-        <img src={yeomanImage} alt="Yeoman Generator" />
-        <div className="notice">Please edit <code>src/components/Main.js</code> to get started!</div>
+
+
+
+/*let yeomanImage = require('../images/yeoman.png');*/
+
+
+export default class extends Component {
+
+  constructor(props){
+    super(props);
+  }
+  render(){
+    return(
+      <div>
+        <h1>wang ming</h1>
+        <ImagesBlock />
       </div>
     );
   }
 }
-
-AppComponent.defaultProps = {
-};
-
-export default AppComponent;
